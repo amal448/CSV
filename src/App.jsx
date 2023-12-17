@@ -19,6 +19,7 @@ function App() {
         return <Page1 />;
       case 2:
         return <Page2 />;
+        
       case 3:
         return <Page3 />;
       default:
@@ -37,9 +38,9 @@ function App() {
   }, [currentStep]);
 
   return (
-    <div className="md:w-3/4 mx-auto shadow-xl rounded-2xl pb-2 bg-white-500 ">
+    <div className="w-full md:w-3/4 mx-auto shadow-xl rounded-2xl pb-2 bg-white-500">
       {/* stepper */}
-      <div className="bg-white container bg-grey-600  horizontal my-5">
+      <div className="bg-white container bg-grey-600 horizontal my-5 flex-col">
         <Stepper steps={steps} currentStep={currentStep} />
       </div>
 

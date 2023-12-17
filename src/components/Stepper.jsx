@@ -83,9 +83,7 @@ useEffect(()=>{
                 ):(index+1)}
                 </div>
            
-                <div className={`absolute top-0 text-center mt-16 w-32 text-xs
-                font-medium uppercase ${step.highlighted ?" text-gray-900 "
-                :"text-gray-400"}`}>
+                <div className={`absolute top-0 text-center mt-16 w-full md:w-32 text-xs font-medium uppercase ${step.highlighted ? "text-gray-900" : "text-gray-400"}`}>
                 {/* display description */}
                 {step.description}
                              </div>

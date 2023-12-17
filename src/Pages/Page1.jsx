@@ -1,10 +1,10 @@
 import React from 'react';
-import Form from '../steps/Form';
+import Formdata from '../steps/Form';
 
 const Page1 = () => {
   return (
     <div className='bg-green-100 w-full' >
-      <Form />
+      <Formdata />
       {/* Additional content for Page 1 if needed */}
     </div>
   );

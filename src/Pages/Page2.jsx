@@ -3,10 +3,12 @@ import Map from '../steps/Map';
 
 const Page2 = () => {
   return (
-    <div>
-      <Map />
-      {/* Additional content for Page 2 if needed */}
+    <div> 
+   <Map />
     </div>
+   
+      
+   
   );
 };
 
