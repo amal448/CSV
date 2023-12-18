@@ -1,7 +1,7 @@
 import axios from "axios"
 axios.defaults.withCredentials=true
 
-axios.defaults.baseURL="http://localhost:5173/";
+// axios.defaults.baseURL="https://8d08-103-155-223-148.ngrok-free.app";
 
 // export async function registerData(credentials)
 // {
@@ -17,13 +17,13 @@ axios.defaults.baseURL="http://localhost:5173/";
 // }
 export async function registerData(credentials) {
     try {
-    //   const response = await axios.post('https://8d08-103-155-223-148.ngrok-free.app/api/csv/test', credentials, {
-    //     headers: {
-    //       'ngrok-skip-browser-warning': 'any',
-    //       'Content-Type': 'application/json', // Example content type, adjust as needed
-    //       // Add other headers as needed
-    //     }
-    //   });
+      const response = await axios.post('', credentials, {
+        headers: {
+          'ngrok-skip-browser-warning': 'any',
+          'Content-Type': 'application/json', // Example content type, adjust as needed
+          // Add other headers as needed
+        }
+      });
   
       console.log(response.data);
       return response.data;

@@ -3,7 +3,7 @@ import Map from '../steps/Map';
 
 const Page2 = () => {
   return (
-    <div> 
+    <div > 
    <Map />
     </div>
    
