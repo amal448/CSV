@@ -1,7 +1,7 @@
 import axios from "axios"
 axios.defaults.withCredentials=true
 
-// axios.defaults.baseURL="https://8d08-103-155-223-148.ngrok-free.app";
+axios.defaults.baseURL="https://8d08-103-155-223-148.ngrok-free.app";
 
 // export async function registerData(credentials)
 // {
