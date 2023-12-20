@@ -16,7 +16,7 @@ const validationSchema = Yup.object().shape({
       return value && ['text/csv'].includes(value.type);
     })
     .required('Please upload a CSV file.'),
-    locationId: Yup.string().email('Please Enter Location Id').required('Location Id is required'),
+    locationId: Yup.string().required('Location Id is required'),
     
 });
 

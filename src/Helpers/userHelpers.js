@@ -32,3 +32,25 @@ export async function registerData(credentials) {
       throw error;
     }
   }
+  export async function CustomHeaders() {
+    try {
+      const response = await axios.get('https://8d08-103-155-223-148.ngrok-free.app/api/csv/test', credentials);
+  
+      console.log(response.data);
+      return response.data;
+    } catch (error) {
+      console.error("Error during the request:", error);
+      throw error;
+    }
+  }
+  export async function GHLFields() {
+    try {
+      const response = await axios.get('', credentials);
+  
+      console.log(response.data);
+      return response.data;
+    } catch (error) {
+      console.error("Error during the request:", error);
+      throw error;
+    }
+  }
