@@ -16,6 +16,8 @@ const validationSchema = Yup.object().shape({
       return value && ['text/csv'].includes(value.type);
     })
     .required('Please upload a CSV file.'),
+    locationId: Yup.string().email('Please Enter Location Id').required('Location Id is required'),
+    
 });
 
 const Form = () => {
@@ -27,6 +29,7 @@ const Form = () => {
       username: '',
       email: '',
       file: null, // Initialize file state
+      locationId:''
     },
     validationSchema,
     
@@ -109,6 +112,24 @@ const Form = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.email}
+              />
+            </div>
+            <div className="w-1/2">
+              <label htmlFor="email" className="block text-gray-600 text-sm font-medium mb-2">
+                Location Id
+              </label>
+              {formik.touched.locationId && formik.errors.locationId && (
+                <div className="text-red-500 text-xs">{formik.errors.locationId}</div>
+              )}
+              <input
+                type="text"
+                id="locationId"
+                name="locationId"
+                placeholder="Enter your email"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.locationId}
               />
             </div>
           </div>
